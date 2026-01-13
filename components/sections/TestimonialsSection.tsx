@@ -44,7 +44,7 @@ export const TestimonialsSection = () => {
                     ))}
                   </div>
                   <p className="text-muted leading-relaxed mb-6 italic flex-grow">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div className="mt-auto">
                     <p className="text-sm font-medium text-text">

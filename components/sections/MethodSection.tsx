@@ -107,7 +107,7 @@ export const MethodSection = () => {
           <Card className="border-l-4 border-l-accent bg-card/90">
             <CardContent className="p-6 lg:p-8">
               <p className="text-xl lg:text-2xl font-serif italic text-text leading-relaxed text-center">
-                "{leitsatz}"
+                &ldquo;{leitsatz}&rdquo;
               </p>
             </CardContent>
           </Card>

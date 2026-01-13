@@ -52,8 +52,7 @@ export const Icon: React.FC<IconProps> = ({
   return (
     <IconComponent
       className={cn("flex-shrink-0", className)}
-      size={size}
-      strokeWidth={1.5}
+      {...({ size, strokeWidth: 1.5 } as any)}
     />
   );
 };

@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/sections/Footer";
+import { Divider } from "@/components/ui/divider";
 
 export default function Home() {
   return (
@@ -21,13 +22,20 @@ export default function Home() {
       <SegmentSelector />
       <ProblemSection />
       <MethodSection />
+      <Divider />
       <OfferSection />
+      <Divider />
       <BurnoutSection />
+      <Divider />
       <ProcessSection />
+      <Divider />
       <AboutSection />
+      <Divider />
       <TestimonialsSection />
+      <Divider />
       <FAQSection />
       <FinalCTASection />
+      <Divider />
       <ContactSection />
       <Footer />
     </main>

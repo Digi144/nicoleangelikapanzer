@@ -5,7 +5,6 @@ import { burnoutSection } from "@/lib/constants";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
-import Image from "next/image";
 
 export const BurnoutSection = () => {
   const handleCtaClick = () => {
@@ -107,20 +106,6 @@ export const BurnoutSection = () => {
             Kostenloses Gespräch buchen
           </Button>
         </motion.div>
-
-        {/* Divider */}
-        <div className="py-16 lg:py-24">
-          <div className="flex justify-center">
-            <Image
-              src="/divider-panzer.webp"
-              alt="Divider"
-              width={600}
-              height={5}
-              className="w-1/2 max-w-[600px] h-auto"
-              quality={100}
-            />
-          </div>
-        </div>
       </div>
     </section>
   );

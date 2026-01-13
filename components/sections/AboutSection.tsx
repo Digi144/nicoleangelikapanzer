@@ -54,20 +54,6 @@ export const AboutSection = () => {
           </motion.div>
         </div>
       </div>
-      
-      {/* Divider */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="flex justify-center">
-          <Image
-            src="/divider-panzer.webp"
-            alt="Divider"
-            width={600}
-            height={5}
-            className="w-1/2 max-w-[600px] h-auto"
-            quality={100}
-          />
-        </div>
-      </div>
     </section>
   );
 };

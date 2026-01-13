@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { methodCards, leitsatz } from "@/lib/constants";
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
-import Image from "next/image";
 
 export const MethodSection = () => {
   return (
@@ -112,20 +112,6 @@ export const MethodSection = () => {
             </CardContent>
           </Card>
         </motion.div>
-
-        {/* Divider */}
-        <div className="py-16 lg:py-24">
-          <div className="flex justify-center">
-            <Image
-              src="/divider-panzer.webp"
-              alt="Divider"
-              width={600}
-              height={5}
-              className="w-1/2 max-w-[600px] h-auto"
-              quality={100}
-            />
-          </div>
-        </div>
       </div>
     </section>
   );

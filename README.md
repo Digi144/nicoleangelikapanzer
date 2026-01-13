@@ -1,60 +1,26 @@
-# Love Me - Landingpage
+# Lov Me - Landingpage
 
-Production-ready Landingpage für Nicole Angelika Panzer (Love Me).
+Production-ready Landingpage für Nicole Angelika Panzer (Lov Me).
 
 ## Tech Stack
 
-- **Next.js 14** (App Router) + TypeScript
-- **Tailwind CSS** für Styling
-- **Framer Motion** für subtile Animationen
-- **Lucide Icons** (SF Symbols Look)
-- **shadcn/ui** inspirierte Komponenten
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (subtile Animationen)
+- **Lucide Icons**
+- **shadcn/ui** Komponenten
 
-## Design System
+## Features
 
-- **Farben**: Warmes Off-White (#F6F3EA), Deep Green (#2F5B45), Sun Gold (#C9A24A)
-- **Typografie**: Playfair Display (Headings), Inter (Body)
-- **Layout**: Max-width 1200px, großzügige Abstände
-- **Radius**: 20-28px auf Karten
-- **Shadows**: Sehr soft, premium Look
+- ✅ Vollständig responsive (Mobile, Tablet, Desktop)
+- ✅ Optimierte Bilder (WebP Format)
+- ✅ SEO-optimiert
+- ✅ Accessibility (WCAG-konform)
+- ✅ Performance-optimiert
+- ✅ Vercel-ready
 
-## Projektstruktur
-
-```
-Website_Panzer/
-├── app/
-│   ├── layout.tsx          # Root Layout
-│   ├── page.tsx            # Hauptseite
-│   └── globals.css         # Globale Styles
-├── components/
-│   ├── sections/           # Alle Page Sections
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx
-│   │   ├── SegmentSelector.tsx
-│   │   ├── ProblemSection.tsx
-│   │   ├── MethodSection.tsx
-│   │   ├── OfferSection.tsx
-│   │   ├── BurnoutSection.tsx
-│   │   ├── ProcessSection.tsx
-│   │   ├── AboutSection.tsx
-│   │   ├── TestimonialsSection.tsx
-│   │   ├── FAQSection.tsx
-│   │   ├── FinalCTASection.tsx
-│   │   ├── ContactSection.tsx
-│   │   └── Footer.tsx
-│   └── ui/                 # UI Komponenten
-│       ├── button.tsx
-│       ├── card.tsx
-│       ├── accordion.tsx
-│       └── icon.tsx
-├── lib/
-│   ├── constants.ts        # Alle Content-Daten
-│   └── utils.ts            # Utility Functions
-└── public/
-    └── self-love-sunrise.jpeg  # Hero Bild
-```
-
-## Entwicklung
+## Lokale Entwicklung
 
 ```bash
 # Dependencies installieren
@@ -63,33 +29,60 @@ npm install
 # Development Server starten
 npm run dev
 
-# Production Build
+# Build für Production
 npm run build
+
+# Production Server starten
 npm start
 ```
 
-Die Seite läuft auf: **http://localhost:3000**
+Die Website läuft dann auf [http://localhost:3000](http://localhost:3000)
 
-## Features
+## Vercel Deployment
 
-✅ Responsive Design (Mobile, Tablet, Desktop)
-✅ Smooth Scroll Navigation
-✅ Sticky Header mit aktiver Nav-Highlight
-✅ Alle Sections implementiert
-✅ FAQ Accordion
-✅ Contact Form (Placeholder für Calendly)
-✅ Accessibility Features
-✅ Performance optimiert (Next.js Image)
+Das Projekt ist bereits für Vercel konfiguriert:
 
-## Nächste Schritte
+1. **Automatisches Deployment:**
+   - Verbinde das GitHub Repository mit Vercel
+   - Vercel erkennt automatisch Next.js und konfiguriert das Projekt
+   - Jeder Push zu `main` triggert automatisch ein neues Deployment
 
-1. **Portrait Bild**: Ersetze den Platzhalter in `AboutSection.tsx` mit einem echten Portrait
-2. **Calendly Integration**: Ersetze den Placeholder in `ContactSection.tsx` mit echter Calendly-Integration
-3. **Testimonials**: Ersetze Platzhalter-Texte mit echten Testimonials
-4. **Form Backend**: Implementiere Form-Submission für das Kontaktformular
-5. **SEO**: Füge Meta-Tags und Open Graph Tags hinzu
+2. **Manuelles Deployment:**
+   ```bash
+   # Vercel CLI installieren (falls nicht vorhanden)
+   npm i -g vercel
+   
+   # Deployment
+   vercel
+   ```
 
-## Content Anpassungen
+3. **Umgebungsvariablen:**
+   - Aktuell keine Umgebungsvariablen erforderlich
+   - Bei Bedarf können diese in der Vercel Dashboard konfiguriert werden
 
-Alle Texte und Inhalte sind in `/lib/constants.ts` zentralisiert und können dort angepasst werden.
+## Projektstruktur
 
+```
+Website_Panzer/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root Layout
+│   ├── page.tsx           # Homepage
+│   ├── impressum/         # Impressum Seite
+│   └── datenschutz/       # Datenschutz Seite
+├── components/
+│   ├── sections/          # Page Sections
+│   └── ui/                # UI Komponenten
+├── lib/
+│   ├── constants.ts       # Content & Daten
+│   └── utils.ts           # Utility Funktionen
+├── public/                # Statische Assets (WebP)
+└── tailwind.config.ts     # Tailwind Konfiguration
+```
+
+## Bilder
+
+Alle Bilder sind im WebP-Format für optimale Performance. Die Originaldateien bleiben im Repository für Referenzzwecke.
+
+## License
+
+Private Projekt für Nicole Angelika Panzer.
